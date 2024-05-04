@@ -1,0 +1,151 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "gilroy";
+  color: white;
+  text-decoration: none;
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+}
+
+.back-cont {
+  height: 100vh;
+  width: 100%;
+
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+.front-cont {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  height: 100vh;
+  width: 100%;
+  //   background-color: black;
+  padding: 0 9vw;
+  pointer-events: none;
+}
+
+.nav {
+  height: 120px;
+  width: 100%;
+  // background-color: purple;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  //   margin-bottom: 3vw;
+  pointer-events: all;
+
+  .nav-left {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+
+    .logo img {
+      height: 55px;
+    }
+
+    a {
+      font-size: 1rem;
+      font-weight: 800;
+    }
+  }
+
+  .nav-right {
+    display: flex;
+    gap: 70px;
+
+    a {
+      font-size: 1rem;
+      font-weight: 800;
+    }
+  }
+}
+
+.hero {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translate(0, -50%);
+  padding: 0 8vw;
+
+  .hero-left {
+    height: auto;
+    min-width: 50%;
+
+    .elems {
+      height: 9vw;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      overflow: hidden;
+      position: relative;
+
+      h1 {
+        position: absolute;
+        top: 100%;
+        left: 0%;
+        font-size: 9vw;
+        line-height: -7vw;
+        letter-spacing: 2px;
+        width: 100%;
+        font-weight: 300;
+        font-family: "kajiro";
+
+      }
+      h1:nth-child(1) {
+        top: 0%;
+        // color: blue;
+      }
+      
+    }
+
+    button {
+      color: #000;
+      padding: 0.3vw 2.7vw;
+      font-family: "kajiro";
+      font-size: 2vw;
+      font-weight: 500;
+      letter-spacing: 1px;
+      cursor: pointer;
+      pointer-events: all;
+    }
+  }
+  .hero-right {
+    height: auto;
+    width: 17%;
+    // background-color: rgba(6, 21, 119, 0.606);
+    text-align: right;
+    .img {
+      margin-top: 1.6vw;
+      height: 150px;
+      width: 100%;
+      background-image: url(https://images.unsplash.com/photo-1714052326811-5984cf03ad8a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMDF8fHxlbnwwfHx8fHw%3D);
+      background-size: cover;
+      background-position: center;
+      margin-bottom: 25px;
+    }
+    p {
+      font-size: 14px;
+      font-weight: 550;
+    }
+
+    p:nth-child(3) {
+      margin-bottom: 60px;
+    }
+  }
+}
